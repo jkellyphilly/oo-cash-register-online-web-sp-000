@@ -14,7 +14,7 @@ class CashRegister
   end
 
   def apply_discount
-
+    discount_float = @discount/100.0
   end
 
   def void_last_transaction
