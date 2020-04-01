@@ -16,6 +16,7 @@ class CashRegister
   def apply_discount
     discount_float = @discount/100.0
     @total -= (@total * discount_float)
+    puts "After the "
   end
 
   def void_last_transaction
