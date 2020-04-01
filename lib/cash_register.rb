@@ -14,9 +14,12 @@ class CashRegister
   end
 
   def apply_discount
-    discount_float = @discount/100.0
-    @total -= (@total * discount_float)
-    puts "After the discount, the total comes to $#{@total}."
+    if discount != 0
+      discount_float = @discount/100.0
+      @total -= (@total * discount_float)
+      puts "After the discount, the total comes to $#{@total}."
+    else
+      puts "There is no discount to apply."
   end
 
   def void_last_transaction
